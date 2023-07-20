@@ -1,0 +1,17 @@
+{
+  "introduction": {
+    "title": "Introduction"
+  },
+  "concepts": {
+    "title": "Concepts"
+  },
+  "integration": {
+    "title": "Integration"
+  },
+  "playground": {
+    "title": "Local Playground"
+  },
+  "reference": {
+    "title": "Reference"
+  }
+}

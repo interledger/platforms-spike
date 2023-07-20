@@ -1,0 +1,18 @@
+{
+  "index": {
+    "title": "Home",
+    "display": "hidden",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "schema": {
+    "title": "API",
+    "type": "page"
+  }
+}

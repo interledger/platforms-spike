@@ -1,0 +1,66 @@
+:root {
+  --step--1: clamp(0.8rem, calc(0.7rem + 0.44vw), 0.95rem);
+  --step-0: clamp(1rem, calc(0.88rem + 0.56vw), 1.19rem);
+  --step-1: clamp(1.25rem, calc(1.09rem + 0.69vw), 1.48rem);
+  --step-2: clamp(1.56rem, calc(1.37rem + 0.87vw), 1.86rem);
+  --step-3: clamp(1.95rem, calc(1.71rem + 1.09vw), 2.32rem);
+  --step-4: clamp(2.44rem, calc(2.14rem + 1.36vw), 2.9rem);
+  --step-5: clamp(3.05rem, calc(2.67rem + 1.69vw), 3.62rem);
+  --space-3xs: clamp(0.25rem, calc(0.21rem + 0.19vw), 0.31rem);
+  --space-2xs: clamp(0.5rem, calc(0.42rem + 0.37vw), 0.63rem);
+  --space-xs: clamp(0.75rem, calc(0.67rem + 0.37vw), 0.88rem);
+  --space-s: clamp(1rem, calc(0.88rem + 0.56vw), 1.19rem);
+  --space-m: clamp(1.5rem, calc(1.29rem + 0.93vw), 1.81rem);
+  --space-l: clamp(2rem, calc(1.75rem + 1.11vw), 2.38rem);
+  --space-xl: clamp(3rem, calc(2.63rem + 1.67vw), 3.56rem);
+  --space-2xl: clamp(4rem, calc(3.5rem + 2.22vw), 4.75rem);
+  --space-3xl: clamp(6rem, calc(5.25rem + 3.33vw), 7.13rem);
+  --color-white: #fff;
+  --color-secondary: #282c34;
+  --color-secondary-lightest: #343944;
+  --color-gray-500: #bec3c9;
+  --color-black: #000;
+  --color-link: #0080ff;
+  --color-table-border: #cdcdcd;
+  --color-table-bg: #f9f9fb;
+  --color-table-bg-alt: #fff;
+}
+
+body {
+  min-width: 360px;
+  font-size: var(--step-0);
+}
+
+main a {
+  color: var(--color-link);
+}
+
+.nextra-nav-container a[target]:not([href="https://github.com/WICG/webmonetization"])
+{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nextra-nav-container a[target]:not([href="https://github.com/WICG/webmonetization"])::after
+{
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.5' height='13.5' aria-hidden='true' viewBox='0 0 24 24' class='iconExternalLink_nPIU'%3E%3Cpath fill='currentColor' d='M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z'%3E%3C/path%3E%3C/svg%3E");
+  margin-left: 0.5em;
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.swagger-ui pre code {
+  display: initial;
+}

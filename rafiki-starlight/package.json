@@ -1,0 +1,20 @@
+{
+  "name": "rafiki-starlight",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "graphql": "./node_modules/.bin/graphql-markdown schema.graphql > src/assets/raw_schema.md"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.5.3",
+    "astro": "2.7.0",
+    "graphql": "^16.7.1",
+    "graphql-markdown": "^7.0.0",
+    "sharp": "^0.32.1"
+  }
+}

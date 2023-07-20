@@ -1,0 +1,256 @@
+/* Typography styles */
+.heading1 {
+  font-size: var(--step-4);
+}
+
+.heading2 {
+  font-size: var(--step-3);
+  font-weight: 700;
+  margin-bottom: var(--space-s);
+}
+
+.heading3 {
+  font-size: var(--step-2);
+  font-weight: 700;
+  margin-bottom: var(--space-2xs);
+}
+
+.heading4 {
+  font-size: var(--step-1);
+  font-weight: 700;
+  margin-bottom: var(--space-2xs);
+}
+
+.bodyText {
+  font-size: var(--step-0);
+}
+
+/* Shared section styles */
+.contentWrapperSm {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
+}
+
+.contentWrapperLg {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
+}
+
+.section {
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+  border-bottom: 1px solid var(--color-gray-500);
+}
+
+.sectionHeader {
+  text-align: center;
+}
+
+.sectionHeader p {
+  margin-bottom: var(--space-s);
+}
+
+/* Grid layout styles */
+@media screen and (min-width: 900px) {
+  .twoColGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-l);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .fourColGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-l);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .fourColGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-l);
+  }
+}
+
+/* Hero section styles */
+.hero {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  background-image: url("/img/wm-logo--grey.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 60%;
+  background-size: 60vw;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+@media screen and (min-aspect-ratio: 3 / 4) {
+  .hero {
+    background-size: 40vmin;
+    background-position: 85%;
+  }
+}
+
+.hero > div {
+  padding-bottom: var(--space-l);
+}
+
+.hero h1 {
+  font-weight: normal;
+}
+
+.hero p {
+  font-weight: var(--ifm-font-weight-normal);
+  margin: 0;
+}
+
+.hero.hero a {
+  color: var(--color-white);
+}
+
+.heroTagline {
+  color: var(--color-gray-500);
+  line-height: 1.39;
+}
+
+.heroIcon {
+  width: 120px;
+  margin-bottom: var(--space-s);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroFooter {
+  background-color: var(--color-black);
+  padding: var(--space-m);
+}
+
+.heroFooter a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+/* Card layout styles */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin-bottom: var(--space-s);
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: initial;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: var(--space-s);
+}
+
+.card::after {
+  content: "";
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cardBasic {
+  max-width: 16em;
+  justify-content: center;
+  width: 100%;
+}
+
+.cardWide {
+  flex: 0 1 100%;
+  max-width: 25em;
+  gap: var(--space-s);
+}
+
+.cardWide.cardWide {
+  color: var(--color-secondary-lightest);
+}
+
+@media screen and (min-width: 900px) {
+  .card--wide {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+.cardLogo {
+  max-width: 5em;
+  height: auto;
+}
+
+.cardContent h3 {
+  margin-bottom: var(--space-3xs);
+}
+
+.cardContent p {
+  font-size: var(--step--1);
+  margin-bottom: 0;
+}
+
+/* CTA styles */
+.cta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-s);
+  justify-content: center;
+}
+
+.cta p {
+  margin: 0;
+}
+
+.cta a {
+  white-space: nowrap;
+}
+
+.iconMerge {
+  width: 1em;
+}
+
+/* Contributor section styles */
+.contributors {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xs);
+}
+
+.contributor {
+  flex: 0 0 3em;
+}
+
+.contributor img {
+  border-radius: 50%;
+}

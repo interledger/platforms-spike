@@ -1,0 +1,26 @@
+{
+  "enums": {
+    "title": "Enums"
+  },
+  "inputObjects": {
+    "title": "inputObjects"
+  },
+  "interfaces": {
+    "title": "Interfaces"
+  },
+  "mutations": {
+    "title": "Mutations"
+  },
+  "objects": {
+    "title": "Objects"
+  },
+  "queries": {
+    "title": "Queries"
+  },
+  "scalars": {
+    "title": "Scalars"
+  },
+  "schema": {
+    "title": "Schema"
+  }
+}

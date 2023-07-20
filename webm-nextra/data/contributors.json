@@ -1,0 +1,23 @@
+[
+  {
+    "login": "AlexLakatos",
+    "id": 690132,
+    "node_id": "MDQ6VXNlcjY5MDEzMg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/690132?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AlexLakatos",
+    "html_url": "https://github.com/AlexLakatos",
+    "followers_url": "https://api.github.com/users/AlexLakatos/followers",
+    "following_url": "https://api.github.com/users/AlexLakatos/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AlexLakatos/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AlexLakatos/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AlexLakatos/subscriptions",
+    "organizations_url": "https://api.github.com/users/AlexLakatos/orgs",
+    "repos_url": "https://api.github.com/users/AlexLakatos/repos",
+    "events_url": "https://api.github.com/users/AlexLakatos/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AlexLakatos/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 70
+  }
+]

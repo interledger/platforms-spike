@@ -1,0 +1,17 @@
+{
+  "interledger-protocol": {
+    "title": "Interledger Protocol"
+  },
+  "open-payments": {
+    "title": "Open Payments"
+  },
+  "accounting": {
+    "title": "Accounting"
+  },
+  "account-servicing-entity": {
+    "title": "Account Servicing Entity"
+  },
+  "asset": {
+    "title": "Asset"
+  }
+}

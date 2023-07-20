@@ -1,0 +1,25 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "spec_link": {
+    "title": "Specification",
+    "type": "page",
+    "href": "/specification"
+  },
+  "wicg_link": {
+    "title": "WICG Forum",
+    "type": "page",
+    "href": "https://web.archive.org/web/20230521023112/https://discourse.wicg.io/t/proposal-web-monetization-a-new-revenue-model-for-the-web/3785",
+    "newWindow": true
+  }
+}

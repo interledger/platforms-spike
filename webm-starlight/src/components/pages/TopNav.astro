@@ -1,0 +1,58 @@
+---
+import Search from "../../overrides/Search.astro";
+
+const { locale } = Astro.props;
+---
+<header class="header">
+  <a href="/" class="site-logo">
+    <img src="/img/wm-logo.svg" alt="">
+    <span>Web Monetization</span>
+  </a>
+  <div class="nav-links">
+    <a href="/docs/">Docs</a>
+    <a href="/specification">Specification</a>
+  </div>
+  <Search {locale} />
+</header>
+
+<style>
+  .header { 
+    display: flex;
+    gap: var(--space-s);
+    align-items: center;
+    height: 100%;
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--sl-color-text);
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .site-logo img {
+    width: 2.5em;
+    flex: none;
+  }
+
+  .site-logo span {
+    font-size: larger;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    margin-right: auto;
+  }
+
+  .nav-links a {
+    margin-right: var(--space-s)
+  }
+</style>
