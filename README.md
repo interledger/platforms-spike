@@ -13,11 +13,11 @@ This repo contains the code for all the demo docs sites built with Nextra or Ast
 
 ## Nextra
 
-Rafiki Docs: [overrated-protest.surge.sh](https://overrated-protest.surge.sh/)
+Rafiki Docs: [overrated-protest.surge.sh](https://overrated-protest.surge.sh/)  
 Webmon Docs: [annoyed-airport.surge.sh](https://annoyed-airport.surge.sh/)
 
 ## Astro
 
-Payment Pointers: [seemly-thunder.surge.sh](https://seemly-thunder.surge.sh/)
-Rafiki Docs: [brawny-light.surge.sh](https://brawny-light.surge.sh/)
+Payment Pointers: [seemly-thunder.surge.sh](https://seemly-thunder.surge.sh/)  
+Rafiki Docs: [brawny-light.surge.sh](https://brawny-light.surge.sh/)  
 Webmon Docs: [lumpy-control.surge.sh](http://lumpy-control.surge.sh/)
