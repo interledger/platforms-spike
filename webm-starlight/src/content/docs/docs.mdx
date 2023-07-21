@@ -5,6 +5,7 @@ title: Web Monetization API
 import Specifications from "../../components/docs/Specifications";
 import BrowserCompat from "../../components/docs/BrowserCompat";
 import Hidden from "../../components/docs/Hidden";
+import data from "../../data/browser-compat-data/webmonetization.json";
 
 The Web Monetization API provides a seamless payment experience for site owners and visitors. Unlike the W3C's [Payment Request API](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API), the Web Monetization API sends continuous micro-payments from the user agent to the website. Thus, visitors automatically send a small sum per time unit to any Web Monetized website they visit. The payment rate is predetermined by the user's Web Monetization agent and adapts over time.
 
@@ -91,4 +92,4 @@ A reference on verifying payments.
 
 ## Browser compatibility
 
-{/* <BrowserCompat dataFileName="webmonetization">Web Monetization API</BrowserCompat> */}
+<BrowserCompat json={data}>Web Monetization API</BrowserCompat>

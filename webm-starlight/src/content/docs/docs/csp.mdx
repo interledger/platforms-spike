@@ -4,6 +4,7 @@ title: Content-Security-Policy
 
 import Specifications from "../../../components/docs/Specifications";
 import BrowserCompat from "../../../components/docs/BrowserCompat";
+import data from "../../../data/browser-compat-data/csp.json";
 
 Using the [`Content-Security-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) response header, you can control the list of URLs to use as a payment pointer via the `monetization-src` directive.
 
@@ -37,4 +38,4 @@ Fetches for the following code will return network errors, as the URL provided d
 
 ## Browser compatibility
 
-{/* <BrowserCompat dataFileName="csp">Web Monetization API</BrowserCompat> */}
+<BrowserCompat json={data}>Web Monetization API</BrowserCompat>

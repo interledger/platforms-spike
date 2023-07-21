@@ -1,10 +1,7 @@
 import styles from "./BrowserCompat.module.css";
-import { createRequire } from "module";
 
-export default function BrowserCompat({ dataFileName }) {
-  const require = createRequire(import.meta.url);
-  const data = require(`./data/${dataFileName}.json`);
-  const compatData = data.api;
+export default function BrowserCompat({ json }) {
+  const compatData = json.api;
 
   return (
     <div className={styles.browserCompat}>

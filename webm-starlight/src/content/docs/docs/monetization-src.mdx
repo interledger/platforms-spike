@@ -4,6 +4,7 @@ title: "CSP: monetization-src"
 
 import Specifications from "../../../components/docs/Specifications";
 import BrowserCompat from "../../../components/docs/BrowserCompat";
+import data from "../../../data/browser-compat-data/monetization-src.json";
 
 The [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) (CSP) `monetization-src` directive restricts the list of URLs from which a payment endpoint is loaded.
 
@@ -49,4 +50,4 @@ The following monetization source will not load, as the url doesn't match the on
 
 ## Browser compatibility
 
-{/* <BrowserCompat dataFileName="monetization-src">Web Monetization API</BrowserCompat> */}
+<BrowserCompat json={data}>Web Monetization API</BrowserCompat>
