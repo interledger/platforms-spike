@@ -11,6 +11,16 @@ export default defineConfig({
     overrideIntegration(),
     starlight({
       title: "Web Monetization",
+      locales: {
+        root: {
+          label: "English",
+          lang: "en", // lang is required for root locales
+        },
+        zh: {
+          label: "简体中文",
+          lang: "zh-CN",
+        },
+      },
       social: {
         github: "https://github.com/WICG/webmonetization",
       },
