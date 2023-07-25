@@ -147,10 +147,14 @@ Having discovered the available endpoints, the client initiates the payment usin
 </script>
 
 <style>
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
   @media screen and (min-width: 550px) {
     .input-wrapper {
-      display: flex;
-      gap: 1em;
+      flex-direction: row;
     }
   }
   label p {
@@ -160,8 +164,9 @@ Having discovered the available endpoints, the client initiates the payment usin
   .payment-pointer {
     flex: 1 1 0;
   }
-  .url {
+  .url.url {
     flex: 2 1 0;
+    margin-top: 0;
   }
   .error-msg {
     color: maroon;
