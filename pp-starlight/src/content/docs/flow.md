@@ -168,7 +168,8 @@ Having discovered the available endpoints, the client initiates the payment usin
     flex: 2 1 0;
     margin-top: 0;
   }
-  .error-msg {
+  .error-msg.error-msg {
+    margin-top: 0;
     color: maroon;
   }
 </style>

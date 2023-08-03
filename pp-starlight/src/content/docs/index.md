@@ -162,7 +162,8 @@ That URL represents an account at a wallet and the client begins an interaction 
     flex: 2 1 0;
     margin-top: 0;
   }
-  .error-msg {
+  .error-msg.error-msg {
+    margin-top: 0;
     color: maroon;
   }
 </style>
