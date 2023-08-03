@@ -18,6 +18,6 @@ Webmon Docs: [annoyed-airport.surge.sh](https://annoyed-airport.surge.sh/)
 
 ## Astro
 
-Payment Pointers: ~~[seemly-thunder.surge.sh](https://seemly-thunder.surge.sh/)~~ [migration completed]
+Payment Pointers: ~~[seemly-thunder.surge.sh](https://seemly-thunder.surge.sh/)~~ [migration completed]  
 Rafiki Docs: [brawny-light.surge.sh](https://brawny-light.surge.sh/)  
 Webmon Docs: [lumpy-control.surge.sh](http://lumpy-control.surge.sh/)
