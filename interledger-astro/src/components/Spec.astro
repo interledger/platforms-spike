@@ -1,0 +1,53 @@
+---
+import marked from 'marked';
+import { gfmHeadingId } from "marked-gfm-heading-id";
+import jsdom from "jsdom";
+import TableOfContents from './TableOfContents';
+
+marked.use(gfmHeadingId());
+
+const { source = 'https://jsonplaceholder.typicode.com/todos/1' } = Astro.props;
+const response = await fetch(source);
+const data = await response.text();
+const frontMatterPos = data.indexOf('---', 1) + 3
+const specBody = data.slice(frontMatterPos)
+const markup = marked.parse(specBody)
+
+const { JSDOM } = jsdom;
+const dom = new JSDOM(markup);
+const allH2 = dom.window.document.querySelectorAll("h2")
+
+let tocArray = [];
+allH2.forEach((heading) => {
+  let entry = {
+    "title": heading.textContent,
+    "slug": `#${heading.id}`
+  }
+  tocArray.push(entry)
+});
+---
+<main>
+  <article id="spec"></article>
+  <TableOfContents linksArray={tocArray} />
+</main>
+<astro-spec data-markup={markup}></astro-spec>
+
+<style>
+  article {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+</style>
+
+<script>
+  class AstroSpec extends HTMLElement {
+    constructor() {
+      super();
+
+      const content = this.dataset.markup;
+      document.getElementById('spec').innerHTML = content
+    }
+  }
+
+  customElements.define('astro-spec', AstroSpec);
+</script>

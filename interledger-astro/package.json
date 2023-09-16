@@ -1,0 +1,21 @@
+{
+  "name": "interledger-dev-portal",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^3.0.0",
+    "astro": "^3.0.13",
+    "dompurify": "^3.0.5",
+    "html-escaper": "^3.0.3",
+    "jsdom": "^22.1.0",
+    "marked": "^9.0.0",
+    "marked-gfm-heading-id": "^3.0.8",
+    "preact": "^10.17.1"
+  }
+}

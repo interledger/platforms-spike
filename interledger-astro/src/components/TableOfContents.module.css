@@ -1,0 +1,18 @@
+.toc {
+  flex: none;
+  width: 14rem;
+}
+
+.toc h4 {
+  margin-bottom: var(--space-xs);
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc li {
+  margin-bottom: var(--space-2xs);
+  font-size: var(--step--1);
+}

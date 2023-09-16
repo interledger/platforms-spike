@@ -1,0 +1,93 @@
+--- 
+import Header from '../components/Header.astro';
+import SideNav from '../components/SideNav';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header />
+		<SideNav linksArray={[
+			{
+				title: 'Interledger Protocol V4',
+				slug: 'interledger-protocol'
+			},
+			{
+				title: 'Interledger Addresses',
+				slug: 'ilp-addresses'
+			},
+			{
+				title: 'STREAM Protocol',
+				slug: 'stream-protocol'
+			},
+			{
+				title: 'Simple Payment Setup Protocol (SPSP)',
+				slug: 'simple-payment-setup-protocol'
+			},
+			{
+				title: 'Notes on OER Encoding',
+				slug: 'oer-encoding'
+			},
+			{
+				title: 'Dynamic Configuration Protocol (ILDCP)',
+				slug: 'dynamic-configuration-protocol'
+			},
+			{
+				title: 'Peering, Clearing and Settling',
+				slug: 'peering-clearing-settling'
+			},
+			{
+				title: 'ILP Over HTTP',
+				slug: 'ilp-over-http'
+			},
+			{
+				title: 'SPSP Pull Payments',
+				slug: 'spsp-pull-payments'
+			},
+			{
+				title: 'STREAM Receipts',
+				slug: 'stream-receipts'
+			}
+		]} />
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	body {
+		display: grid;
+		grid-template-columns: 14em minmax(0, 1fr);
+		grid-template-rows: min-content 1fr;
+		grid-template-areas: 'header header' 'nav main';
+		gap: var(--space-m);
+	}
+
+	.site-header {
+		grid-area: header;
+	}
+
+	.side-nav {
+		grid-area: nav;
+	}
+
+	main {
+		grid-area: main;
+		display: flex;
+		gap: var(--space-m)
+	}
+</style>
